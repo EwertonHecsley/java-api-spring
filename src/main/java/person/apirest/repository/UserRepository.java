@@ -32,4 +32,10 @@ public class UserRepository {
 
         return users;
     }
+
+    public User findUserLogin(String login){
+        System.out.println("Buscando usuário pelo login");
+        System.out.println(login);
+        return new User("hecsley","senha123");
+    }
 }
